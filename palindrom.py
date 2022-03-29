@@ -2,6 +2,9 @@ class Palindrom:
     def __init__(self):
         self.x = 10
 
+    def isStrPalindrom(self, x: str) ->bool:
+        return(str(x) == str(x)[::-1])
+
     def isNumPalindrom(self, x: int) -> bool:
         if x < 0:
             return (False)
